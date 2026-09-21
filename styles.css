@@ -7,4 +7,58 @@
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.5;
+    background-color: #fff;
+    color: #5d6063;
+}
+
+nav {
+    background-color: #fff;
+    box-shadow: 0 2px 0 rgba(93,96,99,.1);
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #5995da;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 26px;
+    font-family: Harman Simple;
+}
+
+nav a:hover {
+    color: #76aeed;
+    border-bottom: 1px solid #76aeed;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 2rem;
+    font-size: 13px;
+    color: #5d6063;
+    box-shadow: 0 -2px 0 rgba(93,96,99,.1);
+}
+
+footer a {
+    color: #5995da;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #76aeed;
+    border-bottom: 1px solid #76aeed;
 }
