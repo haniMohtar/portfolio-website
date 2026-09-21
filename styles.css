@@ -9,6 +9,9 @@ body {
     line-height: 1.5;
     background-color: #fff;
     color: #5d6063;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 nav {
@@ -19,6 +22,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 10;
 }
 
 nav ul {
@@ -35,7 +39,7 @@ nav a {
     text-decoration: none;
     font-size: 14px;
     line-height: 26px;
-    font-family: Harman Simple;
+    font-family: 'Inter', sans-serif;
 }
 
 nav a:hover {
@@ -43,11 +47,51 @@ nav a:hover {
     border-bottom: 1px solid #76aeed;
 }
 
+.main-area {
+    max-width: 700px;
+    width: 100%; 
+    margin: 0 auto;
+    padding: 6rem 1.5rem 3rem;
+    flex: 1;            
+}
+
+.intro-row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.circular-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.circular-image a img {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.circular-image a:hover img {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.skills-and-languages, 
+.featured-projects {
+    margin-bottom: 2rem;
+}
+
+
 footer {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.7rem 2rem;
+    padding: 1rem 2rem;
     font-size: 13px;
     color: #5d6063;
     box-shadow: 0 -2px 0 rgba(93,96,99,.1);
